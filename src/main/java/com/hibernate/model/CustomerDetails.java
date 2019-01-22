@@ -15,10 +15,10 @@ public class CustomerDetails implements Serializable{
     private int id;
 
     @Column(name = "customer_name", unique = true)
-    private int name;
+    private String name;
 
     @Column(name = "customer_address", unique = true)
-    private int address;
+    private String address;
 
     public int getId() {
         return id;
@@ -28,19 +28,19 @@ public class CustomerDetails implements Serializable{
         this.id = id;
     }
 
-    public int getName() {
+    public String getName() {
         return name;
     }
 
-    public void setName(int name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public int getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(int address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
